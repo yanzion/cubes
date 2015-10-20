@@ -15,8 +15,8 @@
 
 <div class="btn-group">
     {% for dimension in dimensions %}
-        <button class="btn">
-        <a href="{{dimension.name}}">{{dimension.label or dimension.name}}</a>
+        <button class="btn" onclick="window.location='{{dimension.name}}'">
+        {{dimension.label or dimension.name}}
         </button>
     {% endfor %}
 </div>
