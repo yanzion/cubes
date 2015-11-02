@@ -9,7 +9,8 @@ Use:
 from flask import Flask, render_template, request
 from cubes import Workspace
 import argparse
-import ConfigParser
+# import ConfigParser
+import configparser as ConfigParser
 
 app = Flask(__name__)
 
